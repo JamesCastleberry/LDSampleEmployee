@@ -34,9 +34,7 @@ headerLine = True
 
 
 for line in OpenedDataFile:
-    #Store the length of the line so that we have the position of the final spot in the line (excluding spaces)
     lineLength = len(line.strip())
-    #If the line is the header
     if headerLine == True:
         final.write(line[:line.find('hire_date,') + 10] + ' username, password')
         final.write('\n')
