@@ -30,14 +30,17 @@ randomNumber = None
 #The variable that will be a sequence of 4 random numbers for the password.
 randomSeq = None
 
+headerLine = True
+
 
 for line in OpenedDataFile:
     #Store the length of the line so that we have the position of the final spot in the line (excluding spaces)
     lineLength = len(line.strip())
     #If the line is the header
-    if line.startswith('Firstname'):
+    if headerLine == True:
         final.write(line[:line.find('hire_date,') + 10] + ' username, password')
         final.write('\n')
+        headerLine = False
         continue
     #Store the first letter of the employee's first name to use in the username. 
     if counterOfCommas is 0:
