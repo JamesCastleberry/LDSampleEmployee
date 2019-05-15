@@ -21,7 +21,7 @@ userName = None
 userNameLength = 'void'
 #The variable that will contain the length of the given line
 lineLength = 'void'
-#The variable that will contain a random integet between 0 and 9
+#The variable that will contain a random integer between 1 and 9
 randomNumber = None
 #The variable that will be a sequence of 4 random numbers
 randomSeq = None
